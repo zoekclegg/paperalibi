@@ -112,10 +112,10 @@ const hints = {
         "Does the Guide help narrow down where they might have been?",
         "Are you sure the train could have feasibly travelled to all of those stations?"
     ],
-    "Cafe receipt": [
+    "Café receipt": [
         "Does anything seem off about the items ordered?",
         "The pricing seems a bit odd, doesn't it? £9 for a fruit salad! That's expensive.",
-        "The name of the cafe might suggest what to do with the items and their prices."
+        "The name of the café might suggest what to do with the items and their prices."
     ],
     "Social media post": [
         "Where was the photo was taken?",
