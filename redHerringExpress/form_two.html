@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Red Herring Express</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+    <main>
+        <div class="form-container">
+            <header>
+                <h1>Detective, what is the combination to the lock?</h1>
+            </header>
+
+            <p>Take a look at the new evidence I sent you - there's got to be something in there that can help.</p>
+
+            <form id="numberForm">
+                <label for="numberInput">Enter the three-digit combination</label>
+                <input type="number" id="numberInput" name="numberInput" placeholder="Enter a number" required>
+
+                <!-- Result message -->
+                <p id="resultMessage" class="hidden" aria-live="polite"></p>
+
+                <!-- Submit button -->
+                <button id="submitBtn" type="submit">Submit</button>
+            </form>
+
+            <!-- Hint section -->
+            <div class="hint-section">
+                <button type="button" class="hint-toggle">Need a hint?</button>
+                <div class="hint-content hidden">
+                    <p>Click to reveal some hints:</p>
+                    <div class="single-hint-section">
+                        <button type="button" class="single-hint-toggle">Hint 1</button>
+                        <div class="single-hint hidden">Is there anything in the newspaper that is related to numbers?
+                        </div>
+
+                        <button type="button" class="single-hint-toggle">Hint 2</button>
+                        <div class="single-hint hidden">How might you combine the numbers on the photo to form a single
+                            number?</div>
+
+                        <button type="button" class="single-hint-toggle">Hint 3</button>
+                        <div class="single-hint hidden">Are there any symbols in the article that could be put in
+                            between
+                            the numbers?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="form_two_script.js"></script>
+</body>
+
+</html>

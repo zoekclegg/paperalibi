@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Red Herring Express</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+    <main>
+        <div class="form-container">
+            <header>
+                <h1>Detective, can you work out each passenger's cabin number?</h1>
+            </header>
+
+            <p>Take a look at all those documents I gave you, I'm sure there's enough information in there to
+                figure this all out.</p>
+
+            <form id="cabinForm">
+                <!-- Container for dropdowns -->
+                <div id="dropdownContainer"></div>
+
+                <!-- Result message -->
+                <p id="resultMessage" class="hidden" aria-live="polite"></p>
+
+                <!-- Submit button -->
+                <button id="submitBtn" type="submit">Submit</button>
+            </form>
+
+            <!-- Hint section -->
+            <div class="hint-section">
+                <button type="button" class="hint-toggle">Need a hint?</button>
+                <div class="hint-content hidden">
+                    <p>Click the document you need a hint on:</p>
+                    <ul class="cabin-list"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="form_one_script.js"></script>
+</body>
+
+</html>

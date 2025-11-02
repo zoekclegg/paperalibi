@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Red Herring Express</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+    <main>
+        <div class="form-container">
+            <header>
+                <h1>Detective, do you know what our suspect was doing on the train?</h1>
+            </header>
+
+            <p>Their motive must be hidden somewhere in all the documents.</p>
+
+            <form id="numberForm">
+                <label for="numberInput">Enter the correct phrase:</label>
+                <input type="text" id="numberInput" name="numberInput" placeholder="Enter a phrase" required>
+
+                <!-- Result message -->
+                <p id="resultMessage" class="hidden" aria-live="polite"></p>
+
+                <!-- Submit button -->
+                <button id="submitBtn" type="submit">Submit</button>
+            </form>
+
+            <!-- Hint section -->
+            <div class="hint-section">
+                <button type="button" class="hint-toggle">Need a hint?</button>
+                <div class="hint-content hidden">
+                    <p>Click to reveal hints:</p>
+                    <div class="single-hint-section">
+                        <button type="button" class="single-hint-toggle">Hint 1</button>
+                        <div class="single-hint hidden">The timeline of events don't seem very relevant to the murder.
+                            Why might the train steward have singled out those events?</div>
+
+                        <button type="button" class="single-hint-toggle">Hint 2</button>
+                        <div class="single-hint hidden">The time of each event might be more important than the events
+                            themselves.</div>
+
+                        <button type="button" class="single-hint-toggle">Hint 3</button>
+                        <div class="single-hint hidden">Does the witness statement mention another piece of evidence
+                            that you should be looking at?</div>
+
+                        <button type="button" class="single-hint-toggle">Hint 4</button>
+                        <div class="single-hint hidden">The numbers might indicate which lines and
+                            words to pull out.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="form_three_script.js"></script>
+</body>
+
+</html>
