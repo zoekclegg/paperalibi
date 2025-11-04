@@ -78,6 +78,10 @@ form.addEventListener('submit', e => {
         // Hide any existing error messages before redirecting
         resultMessage.classList.add('hidden');
         window.location.href = 'form_one_success.html';
+    } else if (correctCount === 0) {
+        resultMessage.classList.remove('hidden');
+        resultMessage.textContent = "I'm afraid none of the passengers are correct. Try again!";
+        resultMessage.style.color = 'red';
     } else {
         resultMessage.classList.remove('hidden');
         resultMessage.textContent = `That's not quite right. Only ${correctCount} out of 6 passengers are correct.`;
@@ -92,8 +96,8 @@ document.querySelector('.hint-toggle').addEventListener('click', () => {
 
 // Embedded hints object
 const hints = {
-    "Packing list": [
-        "Do you notice anything unusual about the list of items?",
+    "To-do list": [
+        "Do you notice anything odd about the to-do list?",
         "One of the items has been listed twice.",
         "Is there a placename in the Guide that sounds similar?"
     ],
@@ -118,7 +122,7 @@ const hints = {
         "The name of the café might suggest what to do with the items and their prices."
     ],
     "Social media post": [
-        "Where was the photo was taken?",
+        "Where was the photo taken?",
         "What was Jasmine taking a break from?",
         "Are there any places in the Guide that might match her location?"
     ]

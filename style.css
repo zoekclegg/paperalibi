@@ -77,6 +77,7 @@ input[type="text"] {
     appearance: menulist;
     -webkit-appearance: menulist;
     font-family: inherit;
+    box-sizing: border-box;
 }
 
 input[type="number"] {
@@ -103,6 +104,7 @@ button {
     transition: opacity 0.3s ease, background-color 0.3s ease;
     font-family: inherit;
     font-weight: 600;
+    box-sizing: border-box;
 }
 
 button:hover {
