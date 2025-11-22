@@ -19,7 +19,7 @@
             <p>Their motive must be hidden somewhere in all the documents.</p>
 
             <form id="numberForm">
-                <label for="numberInput">Enter the correct phrase:</label>
+                <label for="numberInput">Enter the correct six-word phrase:</label>
                 <input type="text" id="numberInput" name="numberInput" placeholder="Enter a phrase" required>
 
                 <!-- Result message -->
@@ -50,6 +50,19 @@
                         <button type="button" class="single-hint-toggle">Hint 4</button>
                         <div class="single-hint hidden">Each pair of numbers might indicate which
                             words to pull out from one of the articles.</div>
+
+                        <button type="button" class="single-hint-toggle solution-toggle">Solution</button>
+                        <div class="hidden solution-section">
+                            <button type="button" class="single-hint-toggle">Are you sure you want to see the final
+                                solution?</button>
+                            <div class="single-hint hidden">Use each timestamp's hour value as the line number in
+                                the Blackwood article and the minute value as the word number. Then take the nth
+                                word
+                                from
+                                that line. For example, for the timestamp 1:12am, take the 12th word from line 1,
+                                which is 'to'. Putting all the words together reveals the phrase 'to stop the witness
+                                from testifying'.</div>
+                        </div>
                     </div>
                 </div>
             </div>
