@@ -197,6 +197,18 @@ button:disabled {
     background: #cce0ff;
 }
 
+/* Final solution button styling */
+.cabin-list button.final-solution-toggle {
+    background: #dc3545;
+    color: white;
+    border: 1px solid #dc3545;
+}
+
+.cabin-list button.final-solution-toggle:hover {
+    background: #c82333;
+    border: 1px solid #c82333;
+}
+
 /* Individual hint buttons */
 .single-hint-toggle {
     margin-top: 0.5rem;
@@ -213,6 +225,24 @@ button:disabled {
 
 .single-hint-toggle:hover {
     background: #e0e0e0;
+}
+
+/* Indent hint buttons only when inside cabin-hints */
+.cabin-hints .single-hint-toggle {
+    margin-left: 1rem;
+    width: calc(100% - 1rem);
+}
+
+/* Solution button styling */
+.single-hint-toggle.solution-toggle {
+    background: #dc3545;
+    color: white;
+    border: 1px solid #dc3545;
+}
+
+.single-hint-toggle.solution-toggle:hover {
+    background: #c82333;
+    border: 1px solid #c82333;
 }
 
 /* Hint text */
