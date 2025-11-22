@@ -233,6 +233,22 @@ button:disabled {
     width: calc(100% - 1rem);
 }
 
+/* Indent hint text inside cabin-hints */
+.cabin-hints .single-hint {
+    margin-left: 2rem;
+}
+
+/* Indent buttons inside solution-section */
+.solution-section .single-hint-toggle {
+    margin-left: 1rem;
+    width: calc(100% - 1rem);
+}
+
+/* Indent hint text inside solution-section */
+.solution-section .single-hint {
+    margin-left: 2rem;
+}
+
 /* Solution button styling */
 .single-hint-toggle.solution-toggle {
     background: #dc3545;
