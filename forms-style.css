@@ -1,13 +1,14 @@
 /* General layout */
-html,
-body {
-    height: 100%;
+html {
+    min-height: 100%;
+    background: #1a1a1a;
 }
 
 body {
+    min-height: 100vh;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: #1a1a1a;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,7 +253,7 @@ button:disabled {
     text-align: left;
     border: 2px solid #3d3d3d;
     border-radius: 5px;
-    background: rgba(237, 51, 95, 0.1);
+    background: #6D6D6D;
     color: #ffffff;
     font-weight: 600;
     font-size: 1rem;
