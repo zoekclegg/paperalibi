@@ -253,7 +253,7 @@ button:disabled {
     text-align: left;
     border: 2px solid #3d3d3d;
     border-radius: 5px;
-    background: #6D6D6D;
+    background: #3d3d3d;
     color: #ffffff;
     font-weight: 600;
     font-size: 1rem;
@@ -261,7 +261,7 @@ button:disabled {
 }
 
 .cabin-list button.cabin-toggle:hover {
-    background: rgba(237, 51, 95, 0.2);
+    background: #4a4a4a;
     border-color: #ED335F;
 }
 
