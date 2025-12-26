@@ -4,19 +4,186 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Paper Alibis</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Paper Alibi</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo-words-square.svg" />
+    <link rel="stylesheet" href="landing-style.css" />
 </head>
 
-<body>
+<body class="landing-page">
 
-    <main>
-        <div class="form-container">
-            <img src="temp-logo.png" alt="Paper Alibis Logo"
-                style="display: block; margin: 0 auto; margin-bottom: 20px;">
-            <a href="redHerringExpress/form_one.html" style="color: rgb(197, 8, 8);">The Red Herring Express</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#active-cases" class="nav-link">Active Case</a></li>
+                <li><a href="#faqs" class="nav-link">FAQs</a></li>
+                <li><a href="#" class="nav-link nav-link-store" target="_blank">Store</a></li>
+            </ul>
         </div>
-    </main>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section" id="home">
+        <div class="container">
+            <img src="images/logo-white-full.svg" alt="Paper Alibi Logo" class="header-logo">
+            <p class="lead">Paper Alibi brings you a printable, escape-room–style mystery puzzle to solve at home.
+                Step into the role of the detective and see if you can crack the case.</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>📄 Examine the evidence</h3>
+                    <p>Review letters, witness statements, maps, and other case documents to discover hidden clues.</p>
+                </div>
+                <div class="feature">
+                    <h3>🔍 Play solo or with friends</h3>
+                    <p>Tackle the case alone or work with others to piece everything together.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3>🎯 Solve the Case</h3>
+                    <p>Use your detective skills to solve challenging puzzles and uncover the truth behind the mystery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games-section" id="active-cases">
+        <div class="container">
+            <h2>Active Case</h2>
+            <div class="games-grid">
+                <article class="game-card">
+                    <div class="game-card-header">
+                        <h3>Murder on the Red Herring Express</h3>
+                        <span class="game-badge">Case #001</span>
+                    </div>
+                    <p class="game-description">Jump on board the Red Herring Express where a body has been found. Can
+                        you help identify the victim, uncover the motive and find the killer? </p>
+                    <div class="game-meta">
+                        <span class="meta-item">⏱️ <strong>Duration:</strong> 1.5 - 2 hours</span>
+                        <span class="meta-item">🎲 <strong>Difficulty:</strong> Hard</span>
+                    </div>
+                    <div class="game-buttons">
+                        <a href="#" class="game-button game-button-primary">Buy on Etsy</a>
+                        <a href="redHerringExpress/form_zero.html" class="game-button game-button-secondary">Already
+                            own?
+                            Start Investigating →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs-section" id="faqs">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>How do I play?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Visit the Paper Alibi Etsy store and purchase the game. You'll receive a PDF file with
+                            everything you need to start playing. Inside the PDF are instructions on how to play and
+                            what kind of puzzles you can expect to
+                            see. Follow the link or QR code in the PDF file to take you
+                            to the online part of the game.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>What kind of puzzles are involved?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The game consists of a variety of different puzzles, some directly connected to the
+                            theme, such as matching together information on two different pieces of
+                            evidence. Whilst other puzzles sit outside the context of the game and are often hidden in
+                            plain sight, such as forming a sentence
+                            out of all the bold words on a piece of evidence.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>What do I need to play?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You'll need a copy of the game which you can purchase from the Paper Alibi Etsy store. It's
+                            recommended you print the PDF file out, but it's not necessary. You'll also need an internet
+                            connection so you can access the online part of the game. You're encouraged to take notes
+                            with a pen and paper, and some puzzles might benefit from a calculator.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>How long does the game take to complete?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The approximate duration of our first game is between 1.5 and 2 hours. This may vary
+                            depending on your skill
+                            set, how many people are playing and how many hints you choose to take.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Are there hints available?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, the game comes with a hint system.
+                            Don't be afraid to take hints when you need them. A solution is also available for each
+                            puzzle if you get completely stuck, though we encourage you to try solving it yourself
+                            first.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Can I play with friends or family?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! The game can be solved solo or as part of a group. It's perfect for
+                            game nights, team building, or family fun.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Can children play?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Whilst the game is not designed for children, the content is family-friendly and would be
+                            suitable for children aged 12 and above. However, due to the difficulty level of the game,
+                            some
+                            children might find it too challenging.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Paper Alibi.</p>
+        </div>
+    </footer>
+
+    <script src="landing-script.js"></script>
 
 </body>
 
