@@ -7,11 +7,28 @@ const cabinList = document.querySelector('.cabin-list');
 // Passenger names
 const passengers = [
     'Eddie Strong',
-    'Nick Henry',
     'Jasmine Myers',
-    'Melanie Walters',
     'Keith Roman',
+    'Melanie Walters',
+    'Nick Henry',
     'Robyn Hutley'
+];
+
+// Boarding stations
+const stations = [
+    'Airdale',
+    'Brockleigh',
+    'Haddington',
+    'Hampton Vale',
+    'Highmarsh',
+    'Juniper Yard',
+    'Lansmere',
+    'Maple Bridge',
+    'Millridge Row',
+    'Queensacre',
+    'St Martin\'s',
+    'Uppermill',
+    'Zebworth'
 ];
 
 // Generate dropdowns dynamically
@@ -39,8 +56,32 @@ for (let i = 1; i <= 6; i++) {
     dropdownContainer.appendChild(label);
     dropdownContainer.appendChild(select);
 
+    // Add boarding station dropdown (without label)
+    const stationSelect = document.createElement('select');
+    stationSelect.id = `station${i}`;
+    stationSelect.name = `station${i}`;
+    stationSelect.style.marginTop = '5px';
+
+    const stationPlaceholder = document.createElement('option');
+    stationPlaceholder.value = '';
+    stationPlaceholder.textContent = 'Select boarding station';
+    stationSelect.appendChild(stationPlaceholder);
+
+    stations.forEach(station => {
+        const opt = document.createElement('option');
+        opt.value = station;
+        opt.textContent = station;
+        stationSelect.appendChild(opt);
+    });
+
+    dropdownContainer.appendChild(stationSelect);
+
     // Add event listener to hide result message when dropdown changes
     select.addEventListener('change', () => {
+        resultMessage.classList.add('hidden');
+    });
+
+    stationSelect.addEventListener('change', () => {
         resultMessage.classList.add('hidden');
     });
 }
@@ -51,20 +92,23 @@ form.addEventListener('submit', e => {
     let correctCount = 0;
     let allFilled = true;
 
-    // Define correct cabin assignments (you can modify these as needed)
+    // Define correct cabin assignments with boarding stations
     const correctAnswers = [
-        'Nick Henry',
-        'Melanie Walters',
-        'Robyn Hutley',
-        'Eddie Strong',
-        'Keith Roman',
-        'Jasmine Myers',
+        { passenger: 'Nick Henry', station: 'Queensacre' },
+        { passenger: 'Melanie Walters', station: 'Millridge Row' },
+        { passenger: 'Robyn Hutley', station: 'Zebworth' },
+        { passenger: 'Eddie Strong', station: 'Juniper Yard' },
+        { passenger: 'Keith Roman', station: 'Airdale' },
+        { passenger: 'Jasmine Myers', station: 'Maple Bridge' }
     ];
 
     for (let i = 1; i <= 6; i++) {
-        const val = document.getElementById(`cabin${i}`).value;
-        if (val === '') allFilled = false;
-        if (val === correctAnswers[i - 1]) correctCount++;
+        const passengerVal = document.getElementById(`cabin${i}`).value;
+        const stationVal = document.getElementById(`station${i}`).value;
+        if (passengerVal === '' || stationVal === '') allFilled = false;
+        if (passengerVal === correctAnswers[i - 1].passenger && stationVal === correctAnswers[i - 1].station) {
+            correctCount++;
+        }
     }
 
     if (!allFilled) {
@@ -80,11 +124,15 @@ form.addEventListener('submit', e => {
         window.location.href = 'form_one_success.html';
     } else if (correctCount === 0) {
         resultMessage.classList.remove('hidden');
-        resultMessage.textContent = "I'm afraid none of the passengers are correct. Try again!";
+        resultMessage.textContent = "I'm afraid none of the cabins have the correct passenger and station.";
+        resultMessage.style.color = 'red';
+    } else if (correctCount === 1) {
+        resultMessage.classList.remove('hidden');
+        resultMessage.textContent = "Not quite. Only 1 of the cabins has the correct passenger and station.";
         resultMessage.style.color = 'red';
     } else {
         resultMessage.classList.remove('hidden');
-        resultMessage.textContent = `That's not quite right. Only ${correctCount} out of 6 passengers are correct.`;
+        resultMessage.textContent = `Not quite. Only ${correctCount} of the cabins have the correct passenger and station.`;
         resultMessage.style.color = 'red';
     }
 });
