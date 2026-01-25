@@ -145,40 +145,40 @@ document.querySelector('.hint-toggle').addEventListener('click', () => {
 // Embedded hints object
 const hints = {
     "To-do list": [
-        "Do you notice anything odd about the to-do list?",
-        "One of the items has been listed twice.",
-        "Is there a placename in the Guide that sounds similar to two socks?",
-        "Tusox Castle is located in Queensacre."
+        "Despite Nick's note, he has ended up packing an item twice. We need to connect these two pairs of socks to a location somehow.",
+        "Nick also packed a travel guide, so perhaps that can help us find a location related to socks.",
+        "Is there a placename in the travel guide that sounds similar to two socks?",
+        "Tusox Castle is located in Queensacre. That is where Nick must have boarded the train."
     ],
     "Train ticket": [
-        "Does anything indicate where the train was at a particular moment?",
-        "A timeline of the train's journey could be useful.",
-        "Take a look at some of the other documents for clues about timing.",
-        "Robyn boarded at 3:49am, which was after Susie but before Eddie. Once you've figured out where Susie and Eddie got on, you can work out Robyn's boarding station."
+        "There's blood - or something - covering up the departure station. But there's another piece of information on the ticket that might help.",
+        "It will be useful to construct a partial timeline of the train's journey. You'll need to look at some of the other documents to do this.",
+        "Mel's postcard and Eddie's witness statement both tell us when they boarded the train. You'll need to work out their stations first in order to deduce Mel's.",
+        "Using the map, Robyn could only have boarded at Zebworth."
     ],
     "Postcard": [
-        "Do any of the words in the message stand out to you?",
-        "The name of the recipient might help figure out which words to focus on.",
-        "What's missing from some of the words?",
-        "'Accomodation', 'foward' and 'suprise' all have letters missing. The missing letters spell out 'MRR', which is the station code for Millridge Row."
+        "Do any words stand out to you? The name of the recipient might help figure out which words to focus on.",
+        "Some words are misspelt. What are they and what letters are missing?",
+        "'Swiming', 'foward' and 'suprise' all have missing letters. Knowing the missing letters should help us find a location.",
+        "The missing letters are 'MRR', which is the station code for Millridge Row. That's where Melanie boarded the train."
     ],
     "Social media post": [
         "Where was the photo taken?",
-        "What was Jasmine taking a break from?",
-        "Are there any places in the Guide that might match her location?",
-        "The location on the post is 'EVC' which are the initials for East Valley College in Maple Bridge."
+        "The post has a location tag for EVC. Does Jasmine's post suggest what kind of place this is?",
+        "Take a look at the guide to see if you can find EVC.",
+        "EVC are the initials for East Valley College in Maple Bridge, where Jasmine is studying."
     ],
     "Café receipt": [
-        "Does anything seem off about the items ordered?",
-        "The pricing seems a bit odd, doesn't it? £9 for a fruit salad! That's expensive.",
-        "The name of the café might suggest what to do with the items and their prices.",
-        "Using each item's price as the index, take the corresponding letter from each item's name. For example, the 9th letter of 'Fruit Salad' is 'A'. Putting all the letters together spells out 'Airdale'."
+        "The pricing seems a bit odd, doesn't it? £10 for a hot chocolate! That's expensive.",
+        "The name of the café and the note at the bottom might suggest what to do with the items and their prices.",
+        "Look at each item and it's price. How might we use these to construct the name of the location?",
+        "Using each item's price as the index, take the corresponding letter from each item's name. For example, the 2nd letter of 'Bacon' is 'A'. Putting all the letters together spells out 'Airdale', which is where Carlos boarded."
     ],
     "Witness statement": [
-        "What had the witness been doing before they boarded the train?",
-        "Does the Guide help narrow down where they might have been?",
-        "Are you sure the train could have feasibly travelled to all of those stations?",
-        "Only two locations have an airpot: Juniper Yard and St Martin's. The train can't travel through any station twice, so once you have figured out some of the other passenger's stations you can deduce which station Eddie boarded at."
+        "What had Eddie done before he boarded the train?",
+        "Eddie came straight from the airport. The travel guide can help narrow down which stations have airports.",
+        "Both Juniper Yard and St Martin's have airports. You'll need to work out some of the other passenger's boarding stations to figure out which one Eddie used.",
+        "The train can't travel through any station twice, so based on the other passenger's boarding stations, Eddie boarded at Juniper Yard."
     ],
 };
 
@@ -249,12 +249,12 @@ solutionText.classList.add('single-hint', 'hidden');
 
 const solutionList = document.createElement('ul');
 solutionList.innerHTML = `
-    <li>Cabin 1: Nick Henry</li>
-    <li>Cabin 2: Melanie Walters</li>
-    <li>Cabin 3: Robyn Hutley</li>
-    <li>Cabin 4: Eddie Strong</li>
-    <li>Cabin 5: Carlos Roman</li>
-    <li>Cabin 6: Jasmine Myers</li>
+    <li>Cabin 1: Nick Henry - Queensacre</li>
+    <li>Cabin 2: Melanie Walters - Millridge Row</li>
+    <li>Cabin 3: Robyn Hutley - Zebworth</li>
+    <li>Cabin 4: Eddie Strong - Juniper Yard</li>
+    <li>Cabin 5: Carlos Roman - Airdale</li>
+    <li>Cabin 6: Jasmine Myers - Maple Bridge</li>
 `;
 solutionText.appendChild(solutionList);
 
