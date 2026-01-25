@@ -8,7 +8,7 @@ const cabinList = document.querySelector('.cabin-list');
 const passengers = [
     'Eddie Strong',
     'Jasmine Myers',
-    'Keith Roman',
+    'Carlos Roman',
     'Melanie Walters',
     'Nick Henry',
     'Robyn Hutley'
@@ -98,7 +98,7 @@ form.addEventListener('submit', e => {
         { passenger: 'Melanie Walters', station: 'Millridge Row' },
         { passenger: 'Robyn Hutley', station: 'Zebworth' },
         { passenger: 'Eddie Strong', station: 'Juniper Yard' },
-        { passenger: 'Keith Roman', station: 'Airdale' },
+        { passenger: 'Carlos Roman', station: 'Airdale' },
         { passenger: 'Jasmine Myers', station: 'Maple Bridge' }
     ];
 
@@ -253,7 +253,7 @@ solutionList.innerHTML = `
     <li>Cabin 2: Melanie Walters</li>
     <li>Cabin 3: Robyn Hutley</li>
     <li>Cabin 4: Eddie Strong</li>
-    <li>Cabin 5: Keith Roman</li>
+    <li>Cabin 5: Carlos Roman</li>
     <li>Cabin 6: Jasmine Myers</li>
 `;
 solutionText.appendChild(solutionList);
