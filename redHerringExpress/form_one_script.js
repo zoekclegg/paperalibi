@@ -145,39 +145,39 @@ document.querySelector('.hint-toggle').addEventListener('click', () => {
 // Embedded hints object
 const hints = {
     "To-do list": [
-        "Despite Nick's note, he has ended up packing an item twice. We need to connect these two pairs of socks to a location somehow.",
-        "Nick also packed a travel guide, so perhaps that can help us find a location related to socks.",
+        "Despite Nick's note, he has ended up packing an item twice. You need to connect these two pairs of socks to a location somehow.",
+        "Nick also packed a travel guide, so perhaps that can help you find a location related to socks.",
         "Is there a placename in the travel guide that sounds similar to two socks?",
         "Tusox Castle is located in Queensacre. That is where Nick must have boarded the train."
     ],
     "Train ticket": [
-        "There's blood - or something - covering up the departure station. But there's another piece of information on the ticket that might help.",
-        "It will be useful to construct a partial timeline of the train's journey. You'll need to look at some of the other documents to do this.",
-        "Mel's postcard and Eddie's witness statement both tell us when they boarded the train. You'll need to work out their stations first in order to deduce Mel's.",
-        "Using the map, Robyn could only have boarded at Zebworth."
+        "There's blood - or something - covering up the departure station. But there's another piece of information on the ticket that is more helpful.",
+        "It will be useful to construct a partial timeline of the train's journey. You'll need to look at some of the other passenger's documents to do this.",
+        "Melanie's postcard and Eddie's witness statement both tell you when they boarded the train. You'll need to work out their stations first in order to deduce Robyn's boarding station.",
+        "Using the map and Melanie and Eddie's stations, Robyn could only have boarded at Zebworth."
     ],
     "Postcard": [
         "Do any words stand out to you? The name of the recipient might help figure out which words to focus on.",
         "Some words are misspelt. What are they and what letters are missing?",
-        "'Swiming', 'foward' and 'suprise' all have missing letters. Knowing the missing letters should help us find a location.",
+        "'Swiming', 'foward' and 'suprise' all have missing letters. Knowing the missing letters should help you find a location.",
         "The missing letters are 'MRR', which is the station code for Millridge Row. That's where Melanie boarded the train."
     ],
     "Social media post": [
         "Where was the photo taken?",
-        "The post has a location tag for EVC. Does Jasmine's post suggest what kind of place this is?",
+        "The post is tagged with the location EVC. Does Jasmine's post suggest what kind of place this is?",
         "Take a look at the guide to see if you can find EVC.",
         "EVC are the initials for East Valley College in Maple Bridge, where Jasmine is studying."
     ],
     "Café receipt": [
         "The pricing seems a bit odd, doesn't it? £10 for a hot chocolate! That's expensive.",
         "The name of the café and the note at the bottom might suggest what to do with the items and their prices.",
-        "Look at each item and it's price. How might we use these to construct the name of the location?",
+        "Look at each item and it's price. How might you use these to construct the name of the location?",
         "Using each item's price as the index, take the corresponding letter from each item's name. For example, the 2nd letter of 'Bacon' is 'A'. Putting all the letters together spells out 'Airdale', which is where Carlos boarded."
     ],
     "Witness statement": [
         "What had Eddie done before he boarded the train?",
         "Eddie came straight from the airport. The travel guide can help narrow down which stations have airports.",
-        "Both Juniper Yard and St Martin's have airports. You'll need to work out some of the other passenger's boarding stations to figure out which one Eddie used.",
+        "Both Juniper Yard and St Martin's have airports. You'll need to work out some of the other passenger's boarding stations to figure out the train's route.",
         "The train can't travel through any station twice, so based on the other passenger's boarding stations, Eddie boarded at Juniper Yard."
     ],
 };
