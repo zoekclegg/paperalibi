@@ -487,6 +487,7 @@ body.landing-page {
 
     .game-card {
         padding: 1.5rem;
+        width: 90%;
     }
 
     .game-card h3 {
