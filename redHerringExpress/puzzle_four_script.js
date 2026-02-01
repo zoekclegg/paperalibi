@@ -26,7 +26,7 @@ form.addEventListener('submit', e => {
     if (correctAnswers.includes(userAnswer)) {
         // Hide any existing error messages before redirecting
         resultMessage.classList.add('hidden');
-        window.location.href = 'form_four_success.html'
+        window.location.href = 'puzzle_four_success.html'
     } else {
         resultMessage.classList.remove('hidden');
         resultMessage.textContent = `That's not quite right. Try again!`;

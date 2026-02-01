@@ -26,7 +26,7 @@ form.addEventListener('submit', e => {
     if (userAnswer === correctAnswer.toLowerCase()) {
         // Hide any existing error messages before redirecting
         resultMessage.classList.add('hidden');
-        window.location.href = 'form_three_success.html';
+        window.location.href = 'puzzle_three_success.html';
     } else {
         resultMessage.classList.remove('hidden');
         resultMessage.textContent = `Hmm, not quite right. Try again!`;

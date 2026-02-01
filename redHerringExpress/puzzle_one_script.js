@@ -121,7 +121,7 @@ form.addEventListener('submit', e => {
     if (correctCount === 6) {
         // Hide any existing error messages before redirecting
         resultMessage.classList.add('hidden');
-        window.location.href = 'form_one_success.html';
+        window.location.href = 'puzzle_one_success.html';
     } else if (correctCount === 0) {
         resultMessage.classList.remove('hidden');
         resultMessage.textContent = "I'm afraid none of the cabins have the correct passenger and station.";
