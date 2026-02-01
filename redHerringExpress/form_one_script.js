@@ -6,9 +6,9 @@ const cabinList = document.querySelector('.cabin-list');
 
 // Passenger names
 const passengers = [
+    'Carlos Roman',
     'Eddie Strong',
     'Jasmine Myers',
-    'Carlos Roman',
     'Melanie Walters',
     'Nick Henry',
     'Robyn Hutley'
