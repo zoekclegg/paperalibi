@@ -34,14 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // Contact form submission (placeholder - you can connect to actual backend)
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! We\'ll get back to you soon.');
-            contactForm.reset();
-        });
-    }
 });
