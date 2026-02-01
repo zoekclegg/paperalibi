@@ -441,6 +441,12 @@ body.landing-page {
     line-height: 1.7;
 }
 
+.faq-answer a {
+    color: #ED335F;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* Footer */
 .footer {
     background: #0d0d0d;
